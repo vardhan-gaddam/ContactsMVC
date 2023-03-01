@@ -1,0 +1,186 @@
+﻿body {
+    margin: 0px;
+}
+
+.page-container {
+    font-family: "Century Gothic",sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    margin: 30px;
+}
+
+.page-header {
+    background-color: rgb(51,153,204);
+    color: white;
+    height: 78px;
+    padding-top: 10px;
+    padding-left: 16px;
+}
+
+.logo p {
+    letter-spacing: 0.5px;
+    font-size: 40px;
+    margin: 0px;
+    padding-top: 7px;
+    padding-left: 8px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(51,51,51);
+    height: 28px;
+    margin-bottom: 49px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    padding-left: 20px;
+    margin: 0px;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-list li {
+   padding-top: 5px;
+
+}
+
+.nav-list-item {
+    text-decoration: none;
+    color: rgb(255,255,255);
+    padding: 5px 13px 5px 13px;
+    font-weight: 500;
+}
+
+.nav-list-img {
+    padding-top: 3px;
+    padding-right: 20px;
+}
+
+.form-items {
+    display: flex;
+}
+
+#addForm {
+    position: absolute;
+    margin: 21px 0px 0px 130px;
+    height: 66%;
+    width: 25%;
+    padding: 6px 0px 0px 20px;
+    line-height: 28px;
+    top: 135px;
+    box-shadow: 1px 1px 10px 5px silver;
+}
+
+#addButton {
+    height: 8%;
+    width: 27%;
+    color: white;
+    background-color: #55a355;
+    margin: 20px 19px 0px 0px;
+    float: right;
+    border: 1px;
+}
+
+#Name, #Email, #Website, #Address, #Mobile {
+    width: 93%;
+}
+
+#Landline {
+    width: 85%;
+}
+
+#Address {
+    height: 8%;
+}
+
+.main-page {
+    position: relative;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: 100%;
+}
+
+.contactsPage {
+    border: 1px solid gray;
+}
+
+.contact {
+    border-bottom: 1px solid grey;
+    padding: 0px 25px 0px 9px;
+}
+
+.contact-div {
+    text-decoration: none;
+    color: black;
+}
+
+#nameID {
+    font-size: 25px;
+    margin: 0px 6px 6px 6px;
+    padding: 6px 0px 0px 0px;
+    font-family: sans-serif;
+}
+
+#emailID {
+    font-size: 13px;
+    margin: 0px 0px 0px 8px;
+    font-family: sans-serif;
+}
+
+#mobileID {
+    font-size: 14px;
+    margin: 7px 0px 7px 10px;
+    font-family: sans-serif;
+}
+
+.contact:hover, .contact:active {
+    background-color: lightblue;
+}
+
+#edit-line {
+    display: flex;
+}
+
+.right-content {
+    margin: 0px 0px 0px 50px;
+}
+
+.contact-information {
+    padding-left: 5px;
+    font-family: sans-serif;
+}
+
+.images {
+    padding: 0px 0px 0px 150px;
+}
+
+    .images a {
+        text-decoration: none;
+        color: black;
+    }
+
+.contact-information h5 {
+    font-size: 30px;
+    font-family: sans-serif;
+    margin: 0px;
+}
+
+.land-line, .mobile {
+    margin: 0px;
+}
+
+#updateButton {
+    height: 8%;
+    width: 27%;
+    color: white;
+    background-color: #55a355;
+    margin: 20px 19px 0px 0px;
+    float: right;
+    border: 1px;
+}

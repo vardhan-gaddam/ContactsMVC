@@ -1,0 +1,36 @@
+﻿@model Contact
+
+<form id="addForm" asp-controller="Contacts" asp-action="AddContact" method="post">
+
+	<label asp-for="Name">Name</label><br />
+	<input type="text" id="Name" asp-for="Name" /><br />
+	<span asp-validation-for="Name" class="text-danger"></span>
+
+	<label asp-for="Email">Email</label><br />
+	<input type="text" id="Email" asp-for="Email" /><br />
+	<span asp-validation-for="Email" class="text-danger"></span>
+
+	<div class="form-items">
+		<div>
+			<label asp-for="Mobile">Mobile</label>
+			<input type="text" id="Mobile" asp-for="Mobile" />
+			<span asp-validation-for="Mobile" class="text-danger"></span>
+		</div>
+		<div>
+			<label asp-for="Landline">Landline</label>
+			<input type="text" id="Landline" asp-for="Landline" />
+		</div>
+	</div>
+	<label asp-for="Website">Website</label><br />
+	<input type="text" id="Website" asp-for="Website" /><br />
+
+	<label asp-for="Address">Address</label><br />
+	<textarea id="Address" asp-for="Address"></textarea><br />
+
+	<button type="submit" id="addButton">ADD</button>
+</form>
+@section Scripts {
+	@{
+		await Html.RenderPartialAsync("_ValidationScriptsPartial");
+	}
+}

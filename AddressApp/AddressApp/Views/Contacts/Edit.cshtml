@@ -1,0 +1,31 @@
+﻿@model Contact
+
+<form id="addForm" method="post">
+	<input hidden type="text" name="Id" value="@Model.Id"/>
+	<label asp-for="Name">Name</label><br />
+	<input type="text" id="Name" asp-for="Name" /><br />
+	<span asp-validation-for="Name" class="text-danger"></span>
+	<label asp-for="Email">Email</label><br />
+	<input type="text" asp-for="Email" id="Email" /><br />
+	<span asp-validation-for="Email" class="text-danger"></span>
+	<div class="form-items">
+		<div>
+			<label asp-for="Mobile">Mobile</label>
+			<input type="text" id="Mobile" asp-for="Mobile" />
+			<span asp-validation-for="Mobile" class="text-danger"></span>
+		</div>
+		<div>
+			<label asp-for="Landline">Landline</label>
+			<input type="text" id="Landline" asp-for="Landline" />
+			<span asp-validation-for="Landline" class="text-danger"></span>
+		</div>
+	</div>
+	<label asp-for="Website">Website</label><br />
+	<input type="text" id="Website" asp-for="Website" /><br />
+	<span asp-validation-for="Website" class="text-danger"></span>
+	<label asp-for="Address">Address</label><br />
+	<textarea id="Address" asp-for="Address"></textarea><br />
+
+	<button type="submit" id="updateButton">UPDATE</button>
+</form>
+

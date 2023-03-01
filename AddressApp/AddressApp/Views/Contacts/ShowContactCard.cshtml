@@ -1,0 +1,24 @@
+﻿@model Contact
+
+<head>
+	<link rel="stylesheet" href="~/css/_Layout.css" asp-append-version="true" />
+</head>
+<div class="right-content" id="contact-info-block">
+	<div id="edit-line">
+		<div class="contact-information">
+			<h4>@Model.Name</h4>
+		</div>
+		<div class="images">
+			<img src="~/Images/edit1.jpg" style="width:15px;height:15px" alt="edit">
+			<a asp-controller="Contacts" asp-action="Edit" asp-route-id="@Model.Id">Edit</a>
+			<img src="~/Images/delete1.png" style="margin-left:30px" alt="delete">
+			<a asp-controller="Contacts" asp-action="Delete" asp-route-id="@Model.Id">Delete</a>
+		</div>
+	</div>
+
+	<p>Email:<span class="contact-information">@Model.Email</span></p>
+	<p class="mobile">Mobile:<span class="contact-information">@Model.Mobile</span></p>
+	<p class="land-line">Landline:<span class="contact-information">@Model.Landline</span></p>
+	<p>Website:<span class="contact-information"></span>@Model.Website</p>
+	<p>Address:<span class="contact-information"></span>@Model.Address</p>
+</div>

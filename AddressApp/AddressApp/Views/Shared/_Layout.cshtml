@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@ViewData["Title"] - AddressApp</title>
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/AddressApp.styles.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/css/_Layout.css" asp-append-version="true" />
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+</head>
+<body>
+	<header>
+		<div class="page-container">
+			<div class="page-header">
+				<div class="logo">
+					<p>Address Book</p>
+				</div>
+			</div>
+			<div class="navigation">
+				<ul class="nav-list">
+					<li><a id="item" class="nav-list-item" asp-controller="Contacts" asp-action="Index">HOME</a></li>
+					<li><a class="nav-list-item" asp-controller="Contacts" asp-action="Form">+ ADD</a></li>
+				</ul>
+				<div class="nav-list-img">
+					<img src="~/Images/blog-icon.png" alt="image" height="20" width="20" />
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container">
+		<main role="main" class="pb-3">
+			@(await Component.InvokeAsync("Contacts"))
+		</main>
+		<div class="render-body">
+			@RenderBody()
+		</div>
+	</div>
+
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="~/js/site.js" asp-append-version="true"></script>
+	@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
